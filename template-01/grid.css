@@ -66,29 +66,29 @@ a:active {
         grid-template-columns: 1fr;
     }
     #areaA {
-        visibility: hidden;
+        display: none;
     }
     #areaC {
-        visibility: hidden;
+        display: none;
     }
 }
 
 @media print {
     #grid {
         grid-template-columns: 1fr;
-        background-color: white;
+        background-color: none;
     }
     #areaA {
-        background-color: white;
-        visibility: hidden;
+        background-color: none;
+        display: none;
     }
     #areaB {
         box-shadow: none;
-        background-color: white;
+        background-color: none;
     }  
     #areaC {
-        visibility: hidden;
-        background-color: white;
+        display: none;
+        background-color: none;
     }    
 }
 /* media queries - end */
