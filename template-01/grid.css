@@ -16,6 +16,12 @@ p {
     font-weight: 300;
 }
 
+div.separator {
+    font-size: 2em;
+    color: rgb(55, 55, 55);
+    text-align: center;
+}
+
 /* grid - start */
 #grid {
     display: grid;
