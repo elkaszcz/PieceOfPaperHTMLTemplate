@@ -59,3 +59,36 @@ a:active {
     color: darkred;
 }
 /* links - end */
+
+/* media queries - start */
+@media screen and (max-width: 992px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+    #areaA {
+        visibility: hidden;
+    }
+    #areaC {
+        visibility: hidden;
+    }
+}
+
+@media print {
+    #grid {
+        grid-template-columns: 1fr;
+        background-color: white;
+    }
+    #areaA {
+        background-color: white;
+        visibility: hidden;
+    }
+    #areaB {
+        box-shadow: none;
+        background-color: white;
+    }  
+    #areaC {
+        visibility: hidden;
+        background-color: white;
+    }    
+}
+/* media queries - end */
