@@ -1,6 +1,6 @@
 body {
     background-color: rgb(236, 236, 236);
-    margin: 4em 0 4em 0;
+    margin: 5em 0 5em 0;
 }
 
 h1 {
@@ -21,6 +21,49 @@ div.separator {
     color: rgb(55, 55, 55);
     text-align: center;
 }
+
+/* Navigation - start */
+div.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+}
+
+div.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 10px 10px #b2b2b2;
+}
+
+div.nav li {
+    float: left;
+}
+
+div.nav li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.nav li a:hover {
+    background-color: black;
+    color: white;
+}
+/* Navigation - end */
 
 /* grid - start */
 #grid {
@@ -43,27 +86,29 @@ div.separator {
 #areaC {
     background-color: none;
 }
+
 /* grid - end */
 
 /* links - start */
-a:link {
+p a:link {
     color: black;
     font-weight: 400;
 }
 
-a:visited {
+p a:visited {
     color: rgb(55, 55, 55);
     font-weight: 400;
 }
 
-a:hover {
+p a:hover {
     color: darkred;
     text-decoration: no;
 }
 
-a:active {
+p a:active {
     color: darkred;
 }
+
 /* links - end */
 
 /* media queries - start */
@@ -71,9 +116,11 @@ a:active {
     #grid {
         grid-template-columns: 1fr;
     }
+
     #areaA {
         display: none;
     }
+
     #areaC {
         display: none;
     }
@@ -84,17 +131,21 @@ a:active {
         grid-template-columns: 1fr;
         background-color: none;
     }
+
     #areaA {
         background-color: none;
         display: none;
     }
+
     #areaB {
         box-shadow: none;
         background-color: none;
-    }  
+    }
+
     #areaC {
         display: none;
         background-color: none;
-    }    
+    }
 }
+
 /* media queries - end */
