@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            background: #202731;
+            overflow-x: hidden;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100px;
+            padding: 100px;
+        }
+
+        .blue {
+            background: #3c31dd;
+        }
+
+        .red {
+            background: #dd3f31;
+        }
+
+        .pink {
+            background: #ff0066;
+            overflow: hidden;
+        }
+
+        .dark {
+            background: #0f0f10;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave .shape-fill {
+            fill: hsl(240, 3%, 6%);
+        }
+
+        .spacer {
+            aspect-ratio: 960 / 300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url('layer1.svg');
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+
+        .blob-motion {
+            position: absolute;
+            transform: translateY(-20%);
+            z-index: 0;
+        }
+
+        .blob-content {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="dark">
+        <h1>Nice curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi ex debitis delectus ad temporibus, quis
+            rerum, minus aperiam distinctio consequuntur alias nemo at soluta neque ipsam voluptatibus laborum odio.</p>
+    </section>
+
+    <section class="pink">
+        <h1>Nice curves</h1>
+        <p>Consequatur cum soluta, dolorum debitis nihil cupiditate veniam distinctio eius, consectetur, amet earum
+            aliquam mollitia maxime blanditiis excepturi commodi sed unde. Tenetur officia, enim adipisci exercitationem
+            ea saepe porro odit.</p>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section>
+        <h1>Nice curves</h1>
+        <p>Cumque nemo animi, obcaecati commodi voluptatibus odio doloribus tempore blanditiis fuga in pariatur maiores
+            cupiditate quod laudantium exercitationem quidem delectus recusandae tenetur assumenda deserunt unde ipsum,
+            nihil ea temporibus? Recusandae!</p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+    <section class="pink">
+        <div class="blob-content">
+            <h1>Nice curves</h1>
+            <p>Ea ratione id eligendi itaque fugiat rem quos cumque sunt error. Tenetur ea perferendis quidem nobis,
+                eligendi, quaerat quo magnam odio voluptas omnis voluptatibus et repudiandae. Quis mollitia atque
+                consectetur!</p>
+        </div>
+
+        <svg id="visual" class="blob-motion" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(430.34743495581176 149.82736604428283)">
+                <path id="blob1"
+                    d="M94.4 -88.4C118 -70.7 130 -35.4 121.2 -8.8C112.3 17.7 82.7 35.4 59 56.7C35.4 78 17.7 103 -1.2 104.2C-20 105.4 -40.1 82.7 -55.4 61.4C-70.7 40.1 -81.4 20 -84.1 -2.7C-86.8 -25.5 -81.6 -50.9 -66.2 -68.6C-50.9 -86.2 -25.5 -96.1 4.9 -101.1C35.4 -106 70.7 -106 94.4 -88.4"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(422.24439510876687 152.91488592032744)" style="visibility: hidden;">
+                <path id="blob2" 
+                d="M92.9 -86.2C117.9 -67.9 133.9 -33.9 133.9 0C133.9 33.9 117.9 67.9 92.9 84C67.9 100.2 33.9 98.6 2.6 96C-28.8 93.4 -57.5 89.8 -70 73.7C-82.5 57.5 -78.8 28.8 -73.2 5.5C-67.7 -17.7 -60.4 -35.4 -47.9 -53.7C-35.4 -72 -17.7 -91 8.1 -99.1C33.9 -107.3 67.9 -104.5 92.9 -86.2" fill="#BB004B"></path>
+            </g>
+        </svg>
+
+        <script>
+            const tween = KUTE.fromTo(
+                "#blob1",
+                {path: '#blob1'},
+                {path: '#blob2'},
+                {repeat: 999, duration: 3000, yoyo: true}
+            )
+            tween.start()
+        </script>
+    </section>
+    <div class="spacer layer1"></div>
+
+
+    <section>
+        <h1>Nice curves</h1>
+        <p>Quia dolor, ipsa placeat deleniti ex voluptas doloribus aut dicta voluptates vel amet ipsam? Asperiores id
+            suscipit est repudiandae! Quidem ut ipsum deserunt? Doloribus laboriosam voluptates, voluptate consequatur
+            numquam ex.</p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+
+    <section class="pink">
+        <h1>Nice curves</h1>
+        <p>Distinctio maiores nobis corporis alias adipisci nam ullam ducimus quis laborum delectus debitis, accusamus
+            quasi numquam natus illum dolorum fugiat quaerat officia perspiciatis commodi beatae unde praesentium ipsam.
+            Quis, dolor.</p>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section>
+        <h1>Nice curves</h1>
+        <p>Necessitatibus corrupti ratione ipsam recusandae nihil facere! Deserunt repellat et alias totam magni ratione
+            vitae enim explicabo tenetur excepturi id voluptate soluta laboriosam pariatur non amet, qui natus eaque
+            quas!</p>
+    </section>
+
+</body>
+
+</html>
