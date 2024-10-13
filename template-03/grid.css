@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(236, 236, 236);
+    margin: 4em 0 4em 0;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5em;
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+    color: rgb(71, 71, 71);
+    font-weight: 400;
+}
+
+/* grid - start */
+#grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 4fr 1fr;
+    column-gap: 2.5em;
+}
+
+#areaA {
+    background-color: none;
+}
+
+#areaB {
+    background-color: white;
+    padding: 2em 3em 2em 3em;
+    box-shadow: 10px 10px 8px #b2b2b2;
+}
+
+#areaC {
+    background-color: none;
+}
+/* grid - end */
+
+/* links - start */
+a:link {
+    color: #0968DA;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0968DA;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0968DA;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0968DA;;
+}
+/* links - end */
+
+/* media queries - start */
+@media screen and (max-width: 992px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+    #areaA {
+        display: none;
+    }
+    #areaC {
+        display: none;
+    }
+}
+
+@media print {
+    #grid {
+        grid-template-columns: 1fr;
+        background-color: none;
+    }
+    #areaA {
+        background-color: none;
+        display: none;
+    }
+    #areaB {
+        box-shadow: none;
+        background-color: none;
+    }  
+    #areaC {
+        display: none;
+        background-color: none;
+    }    
+}
+/* media queries - end */
