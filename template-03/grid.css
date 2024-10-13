@@ -17,6 +17,8 @@ p {
     font-size: 1.2em;
     color: rgb(71, 71, 71);
     font-weight: 400;
+    font-feature-settings: "cv05", "cv08", "cv10", "ss01", "ss08"
+
 }
 
 /* grid - start */
