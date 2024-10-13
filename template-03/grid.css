@@ -9,6 +9,7 @@ h1 {
     color: black;
     font-style: italic;
     font-weight: 400;
+    letter-spacing: 0.15rem;
 }
 
 p {
@@ -46,20 +47,24 @@ a:link {
     color: #0968DA;
     font-weight: 400;
     text-decoration: none;
+    font-style: italic;
 }
 
 a:visited {
     color: #0968DA;
     text-decoration: underline;
+    font-style: italic;
 }
 
 a:hover {
     color: #0968DA;
     text-decoration: underline;
+    font-style: italic;
 }
 
 a:active {
-    color: #0968DA;;
+    color: #0968DA;
+    font-style: italic;
 }
 /* links - end */
 
